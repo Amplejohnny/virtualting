@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+/* Global styles or Tailwind config extension */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: #0e09b4;
+  border-radius: 10px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
