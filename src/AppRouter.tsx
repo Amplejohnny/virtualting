@@ -1,14 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import App from "./App"; // Your layout wrapper
-import IntroductionPage from "./pages/introduction"; 
+import IntroductionPage from "./pages/introduction";
 
 export default function AppRouter() {
   return (
     <Router>
       <Routes>
+        {/* Redirect root path to /docs/introduction */}
         <Route
-         //the "/" route and also the introduction page route
-          path="/docs/introduction" 
+          path="/"
+          element={<Navigate to="/docs/introduction" replace />}
+        />
+        <Route
+          path="/docs/introduction"
           element={
             <App>
               <IntroductionPage />

@@ -8,11 +8,11 @@ interface DocSectionProps {
 
 export function Heading({ id, title, children }: DocSectionProps) {
   return (
-    <section id={id} className="mb-12 scroll-mt-28">
-      <div className="border-l-4 border-[#0E09B4] pl-4">
+    <section id={id} className="mb-12 scroll-mt-10">
+      <div className="border-l-4 border-blue-600 pl-4">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
       </div>
-      <div className="pl-4 text-gray-700 space-y-4">{children}</div>
+      <div className=" text-gray-700 space-y-4">{children}</div>
     </section>
   );
 }
@@ -28,9 +28,9 @@ export function SubTopic({ id, children }: SubTopicProps) {
   return (
     <div
       id={id}
-      className="border-l-4 border-[#0E09B4] bg-white shadow-sm pl-4 pr-2 py-3 mt-10"
+      className="border-l-4 border-blue-500 bg-white shadow-sm pl-4  py-2 mt-10"
     >
-      <h3 className="text-lg font-semibold text-gray-800 hover:underline">
+      <h3 className="text-lg font-semibold text-gray-800 ">
         {children}
       </h3>
     </div>

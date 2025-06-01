@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <div className="relative z-20 px-5 pt-6">
-      <header className="bg-white shadow-2xl rounded-xl px-12 flex items-center justify-between max-w-2xl ">
+      <header className="bg-white shadow-2xl rounded-xl px-12 flex items-center justify-between max-w-2xl sticky top-0 z-30">
         <div className="py-6 md:py-8">
           {/* Section label */}
           <p className="text-xl text-gray-900">
