@@ -1,13 +1,13 @@
 import { SubTopic } from "../components/docSection";
 
-export type DocSection = {
+export type SectionType = {
   id: string;
   href: string;
   title: string;
   content: React.ReactNode;
 };
 
-export const sections: DocSection[] = [
+export const introductionSections: SectionType[] = [
   {
     id: "what-is-virtualting",
     title: "What is Virtualting?",
@@ -134,4 +134,3 @@ export const sections: DocSection[] = [
     href: "/docs/introduction#use-cases",
   },
 ];
-

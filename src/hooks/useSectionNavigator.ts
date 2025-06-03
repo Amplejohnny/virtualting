@@ -1,8 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMemo } from "react";
-import { DocSection } from "../data/docs";
+import { SectionType } from "../data/introduction-docs";
 
-export function useSectionNavigator(sections: DocSection[]) {
+export function useSectionNavigator(sections: SectionType[]) {
   const location = useLocation();
   const navigate = useNavigate();
 

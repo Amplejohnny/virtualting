@@ -4,8 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200 py-6">
       {/* Footer Top Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600">
-        
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 g justify-items-center text-sm sm:text-base text-gray-600">
         {/* Column: For Employers */}
         <div>
           <h4 className="font-medium text-gray-800">For Employers</h4>
@@ -124,8 +123,8 @@ export default function Footer() {
       <div className="border-t border-gray-300 my-4"></div>
 
       {/* Footer Bottom Section */}
-      <div className="text-center text-sm text-gray-500">
-        ©{currentYear} Frontlett Virtualting. All Rights Reserved.
+      <div className="text-center text-sm sm:text-base text-gray-500">
+        ©{currentYear} Frontlett Virtualting. All Rights Reserved
       </div>
     </footer>
   );

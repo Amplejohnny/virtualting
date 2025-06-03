@@ -1,14 +1,18 @@
 import { useEffect } from "react";
 import { Heading } from "../components/docSection";
-import { useTOC } from "../context/TOCContext";
+import { useTOCContext } from "../context/TOCContext";
 import { useSectionNavigator } from "../hooks/useSectionNavigator";
-import { sections } from "../data/docs";
+import { introductionSections } from "../data/introduction-docs";
 
 export default function IntroductionPage() {
-  const { setActiveSectionId } = useTOC();
-  const { current, currentIndex, goTo } = useSectionNavigator(sections);
+  const { setActiveSectionId } = useTOCContext();
+  const { current, currentIndex, goTo } =
+    useSectionNavigator(introductionSections);
+  // console.log("Architecture Navigator Current:", current);
+  // console.log("Architecture Sections Length:", introductionSections.length);
 
   useEffect(() => {
+    // console.log("Current section ID:", current?.id);
     if (current?.id) {
       setActiveSectionId(current.id);
       const el = document.getElementById(current.id);
@@ -38,9 +42,9 @@ export default function IntroductionPage() {
         </button>
         <button
           onClick={() => goTo(currentIndex + 1)}
-          disabled={currentIndex === sections.length - 1}
+          disabled={currentIndex === introductionSections.length - 1}
           className={`px-8 py-3 rounded-md text-sm font-medium ${
-            currentIndex === sections.length - 1
+            currentIndex === introductionSections.length - 1
               ? "bg-gray-200 text-gray-400 cursor-not-allowed"
               : "bg-blue-600 text-white cursor-pointer"
           }`}

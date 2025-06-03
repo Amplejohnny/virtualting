@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import App from "./App"; // Your layout wrapper
 import IntroductionPage from "./pages/introduction";
+import ArchitecturePage from "./pages/architecture";
 
 export default function AppRouter() {
   return (
@@ -24,7 +25,14 @@ export default function AppRouter() {
             </App>
           }
         />
-        {/* Add more routes like this for other side-headings */}
+        <Route
+          path="/docs/architecture"
+          element={
+            <App>
+              <ArchitecturePage />
+            </App>
+          }
+        />
       </Routes>
     </Router>
   );

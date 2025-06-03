@@ -9,7 +9,7 @@ interface DocSectionProps {
 export function Heading({ id, title, children }: DocSectionProps) {
   return (
     <section id={id} className="mb-12 scroll-mt-10">
-      <div className="border-l-4 border-blue-600 pl-4">
+      <div className="border-l-4 border-blue-700 pl-4">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
       </div>
       <div className=" text-gray-700 space-y-4">{children}</div>

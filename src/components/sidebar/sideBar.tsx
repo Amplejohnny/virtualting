@@ -30,6 +30,11 @@ export default function Sidebar() {
   ) => {
     e.preventDefault();
     window.location.href = href;
+    //reload the second time to ensure the hash is processed correctly
+    setTimeout(() => {
+      e.preventDefault();
+      window.location.reload();
+    }, 100);
   };
 
   return (

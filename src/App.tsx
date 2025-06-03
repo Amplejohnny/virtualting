@@ -3,10 +3,10 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar/sideBar";
 import TableOfContents from "./components/sticky-toc";
-import { useTOC } from "./context/TOCContext";
+import { useTOCContext } from "./context/TOCContext";
 
 export default function App({ children }: { children: React.ReactNode }) {
-  const { setActiveSectionId } = useTOC();
+  const { setActiveSectionId } = useTOCContext();
 
   useEffect(() => {
     const headings = Array.from(document.querySelectorAll("h2"));
@@ -36,7 +36,7 @@ export default function App({ children }: { children: React.ReactNode }) {
         <Header />
         <main
           id="doc-content"
-          className="flex-1 px-6 py-8 max-w-5xl relative pr-[270px]"
+          className="flex-1 px-6 py-8 max-w-5xl relative pr-[270px] z-0 overflow-y-auto"
         >
           {children}
         </main>

@@ -1,15 +1,20 @@
-// src/context/TOCContext.tsx
-import { createContext, useContext, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 interface TOCContextType {
   activeSectionId: string;
-  setActiveSectionId: (id: string) => void;
+  setActiveSectionId: Dispatch<SetStateAction<string>>;
 }
 
 const TOCContext = createContext<TOCContextType | undefined>(undefined);
 
 export function TOCProvider({ children }: { children: React.ReactNode }) {
-  const [activeSectionId, setActiveSectionId] = useState("");
+  const [activeSectionId, setActiveSectionId] = useState<string>("");
 
   return (
     <TOCContext.Provider value={{ activeSectionId, setActiveSectionId }}>
@@ -19,8 +24,10 @@ export function TOCProvider({ children }: { children: React.ReactNode }) {
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-export function useTOC() {
+export function useTOCContext() {
   const context = useContext(TOCContext);
-  if (!context) throw new Error("useTOC must be used within a TOCProvider");
+  if (!context) {
+    throw new Error("useTOCContext must be used within a TOCProvider");
+  }
   return context;
 }

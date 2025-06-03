@@ -1,4 +1,12 @@
-import { MdOutlineMenuBook, MdOutlineArchitecture, MdPlayCircleOutline } from "react-icons/md";
+import { MdOutlineMenuBook } from "react-icons/md";
+import { BsQuestionCircle } from "react-icons/bs";
+import {
+  LuUsers,
+  LuSettings,
+  LuBuilding,
+  LuCog,
+  LuGitBranch,
+} from "react-icons/lu";
 
 type NavItem = {
   label: string;
@@ -24,7 +32,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Architecture",
     href: "/docs/architecture",
-    icon: <MdOutlineArchitecture />,
+    icon: <LuBuilding />,
     children: [
       { label: "System Overview", href: "/docs/architecture#system-overview" },
       { label: "Slot Mechanics", href: "/docs/architecture#slot-mechanics" },
@@ -37,7 +45,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Getting Started",
     href: "/docs/getting-started",
-    icon: <MdPlayCircleOutline />,  
+    icon: <LuUsers />,
     children: [
       { label: "For Talents", href: "/docs/getting-started#for-talents" },
       { label: "For Employers", href: "/docs/getting-started#for-employers" },
@@ -47,6 +55,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Tools & Integration",
     href: "/docs/tools-integration",
+    icon: <LuCog />,
     children: [
       {
         label: "Virtualting Platform",
@@ -62,6 +71,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Best Practices",
     href: "/docs/best-practices",
+    icon: <LuSettings />,
     children: [
       {
         label: "Effective Slot Management",
@@ -77,6 +87,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Versioning & Updates",
     href: "/docs/versioning",
+    icon: <LuGitBranch />,
     children: [
       { label: "Release Notes", href: "/docs/versioning#release-notes" },
       { label: "Migration Guides", href: "/docs/versioning#migration" },
@@ -86,6 +97,7 @@ export const sidebarItems: NavItem[] = [
   {
     label: "Resources",
     href: "/docs/resources",
+    icon: <BsQuestionCircle />,
     children: [
       { label: "FAQs", href: "/docs/resources#faqs" },
       { label: "Glossary", href: "/docs/resources#glossary" },
