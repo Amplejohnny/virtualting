@@ -12,7 +12,7 @@ export default function ArchitecturePage() {
   //   console.log("Architecture Sections Length:", architectureSections.length);
 
   useEffect(() => {
-    console.log("Current section ID:", current?.id);
+    // console.log("Current section ID:", current?.id);
     if (current?.id) {
       setActiveSectionId(current.id);
       const el = document.getElementById(current.id);
