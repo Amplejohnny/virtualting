@@ -8,11 +8,8 @@ export default function ArchitecturePage() {
   const { setActiveSectionId } = useTOCContext();
   const { current, currentIndex, goTo } =
     useSectionNavigator(architectureSections);
-  //   console.log("Architecture Navigator Current:", current);
-  //   console.log("Architecture Sections Length:", architectureSections.length);
 
   useEffect(() => {
-    // console.log("Current section ID:", current?.id);
     if (current?.id) {
       setActiveSectionId(current.id);
       const el = document.getElementById(current.id);

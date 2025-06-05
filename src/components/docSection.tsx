@@ -30,7 +30,7 @@ export function SubTopic({ id, children }: SubTopicProps) {
       id={id}
       className="border-l-4 border-blue-500 bg-white shadow-sm pl-4  py-2 mt-10"
     >
-      <h3 className="text-lg font-semibold text-gray-800 ">
+      <h3 className="text-base font-bold text-gray-800 ">
         {children}
       </h3>
     </div>
