@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { sidebarItems } from "./sidebarItems";
-import Logo from "../../assets/Icon-V.png";
+import Logo from "../../assets/logo-sidebar.png";
 
 export default function Sidebar() {
   const location = useLocation();
@@ -30,18 +30,13 @@ export default function Sidebar() {
   ) => {
     e.preventDefault();
     window.location.href = href;
-    //reload the second time to ensure the hash is processed correctly
-    // setTimeout(() => {
-    //   e.preventDefault();
-    //   window.location.reload();
-    // }, 500);
   };
 
   return (
     <aside className="sidebar-scroll hidden md:flex flex-col w-64 h-screen bg-[#0A2A73] text-white fixed top-0 left-0 overflow-y-auto z-30">
       {/* Logo wrapper */}
-      <div className="bg-white px-4 py-6 mb-4 flex items-center justify-center shadow-sm">
-        <img src={Logo} alt="Virtualting Logo" className="w-[120px] h-auto" />
+      <div className="bg-white px-2 py-4 mb-4 flex items-center justify-center shadow-sm">
+        <img src={Logo} alt="Virtualting Logo" className="w-[140px] h-auto" />
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 sidebar-scroll">
