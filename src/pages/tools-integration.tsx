@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Heading } from "../components/docSection";
 import { useTOCContext } from "../context/TOCContext";
 import { useSectionNavigator } from "../hooks/useSectionNavigator";
-import { toolsAndIntegrationSections } from "../data/tools-integration";
+import { toolsAndIntegrationSections } from "../data/tools-integration-docs";
 
 export default function ToolsAndIntegrationPage() {
   const { setActiveSectionId } = useTOCContext();

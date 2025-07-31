@@ -1,10 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useAutoTOC from "../hooks/useAutoTOC";
 import { useTOCContext } from "../context/TOCContext";
+
+const SUBTOPICS_THRESHOLD = 4; // Show "Show More" after this many subtopics
 
 export default function TableOfContents() {
   const toc = useAutoTOC("doc-content");
   const { activeSectionId, setActiveSectionId } = useTOCContext();
+  const [expandedSections, setExpandedSections] = useState<
+    Record<string, boolean>
+  >({});
 
   // Scroll to element by manually clicking on TOC item
   const scrollTo = (id: string) => {
@@ -17,6 +22,13 @@ export default function TableOfContents() {
       const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
+  };
+
+  const toggleExpand = (sectionId: string) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [sectionId]: !prev[sectionId],
+    }));
   };
 
   // Observe which heading is in view
@@ -61,36 +73,59 @@ export default function TableOfContents() {
           <p className="text-sm text-gray-500">Loading table of contents...</p>
         ) : (
           <div className="space-y-4">
-            {toc.map((section) => (
-              <div key={section.id}>
-                <button
-                  onClick={() => scrollTo(section.id)}
-                  className={`block text-left text-sm font-semibold w-full mb-1 cursor-pointer hover:underline ${
-                    activeSectionId === section.id
-                      ? "text-black"
-                      : "text-gray-800"
-                  }`}
-                >
-                  {section.label}
-                </button>
+            {toc.map((section) => {
+              const isExpanded = expandedSections[section.id] ?? false;
+              const hasMoreSubtopics =
+                section.subTopics.length > SUBTOPICS_THRESHOLD;
+              const displayedSubtopics =
+                hasMoreSubtopics && !isExpanded
+                  ? section.subTopics.slice(0, SUBTOPICS_THRESHOLD)
+                  : section.subTopics;
 
-                <div className="pl-4 space-y-2">
-                  {section.subTopics.map((sub) => (
-                    <button
-                      key={sub.id}
-                      onClick={() => scrollTo(sub.id)}
-                      className={`block text-left text-sm w-full cursor-pointer hover:underline ${
-                        activeSectionId === sub.id
-                          ? "text-black font-medium"
-                          : "text-gray-600"
-                      }`}
-                    >
-                      {sub.label}
-                    </button>
-                  ))}
+              return (
+                <div key={section.id}>
+                  <button
+                    onClick={() => scrollTo(section.id)}
+                    className={`block text-left text-sm font-semibold w-full mb-1 cursor-pointer hover:underline ${
+                      activeSectionId === section.id
+                        ? "text-black"
+                        : "text-gray-800"
+                    }`}
+                  >
+                    {section.label}
+                  </button>
+
+                  <div className="pl-4 space-y-2">
+                    {displayedSubtopics.map((sub) => (
+                      <button
+                        key={sub.id}
+                        onClick={() => scrollTo(sub.id)}
+                        className={`block text-left text-sm w-full cursor-pointer hover:underline ${
+                          activeSectionId === sub.id
+                            ? "text-black font-medium"
+                            : "text-gray-600"
+                        }`}
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+
+                    {hasMoreSubtopics && (
+                      <button
+                        onClick={() => toggleExpand(section.id)}
+                        className="block text-left text-sm w-full cursor-pointer text-blue-600 hover:text-blue-800 hover:underline"
+                      >
+                        {isExpanded
+                          ? "Show Less"
+                          : `Show ${
+                              section.subTopics.length - SUBTOPICS_THRESHOLD
+                            } More`}
+                      </button>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

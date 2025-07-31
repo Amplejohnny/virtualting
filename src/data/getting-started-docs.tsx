@@ -20,10 +20,12 @@ export const gettingStartedSections: SectionType[] = [
         </p>
 
         <SubTopic id="step-by-step">Step-By-Step Onboarding</SubTopic>
-        <p className="ml-4">Follow this steps to onboard as a Talent:</p>
+        <p className="mt-3 ml-3 md:ml-6">
+          Follow this steps to onboard as a Talent:
+        </p>
 
         <SubTopic id="create-talent">1. Create an Account</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -31,7 +33,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="complete-verification">2. Complete Verification</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -39,7 +41,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="set-availability">3. Set Your Availability</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -47,7 +49,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="profile-setup">4. Profile Setup</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -55,7 +57,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="receive-slot">5. Receive or Request Slots</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -63,7 +65,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="work-on-slot">6. Work on Slots</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -71,7 +73,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="track-progress">7. Track Progress & Earnings</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -79,7 +81,7 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="best-practices">Best Practices</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -103,10 +105,12 @@ export const gettingStartedSections: SectionType[] = [
         </p>
 
         <SubTopic id="step-by-step-setup">Step-By-Step Setup</SubTopic>
-        <p className="ml-4">Follow this steps to onboard as a Employer:</p>
+        <p className="mt-3 ml-3 md:ml-6">
+          Follow this steps to onboard as a Employer:
+        </p>
 
         <SubTopic id="create-employer">1. Create a Company Profile</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -114,36 +118,36 @@ export const gettingStartedSections: SectionType[] = [
         </ul>
 
         <SubTopic id="fund-wallet">2. Fund Your Wallet</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
         </ul>
 
         <SubTopic id="slot-requirement">3. Post Slot Requirement</SubTopic>
-        <p className="ml-4">Create slot engagements with:</p>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <p className="mt-3 ml-3 md:ml-6">Create slot engagements with:</p>
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="book-talents">4. Book Talents</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="slot-delivery">5. Track Slot Delivery</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="submit-feedback">6. Submit Feedback</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -152,14 +156,14 @@ export const gettingStartedSections: SectionType[] = [
         <SubTopic id="manage-contracts">
           7. Manage Contracts and Policies
         </SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="best-practices2">Best Practices</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Gig economy optimization</li>
@@ -180,10 +184,12 @@ export const gettingStartedSections: SectionType[] = [
         </p>
 
         <SubTopic id="admin-duties">Core Administrative Duties</SubTopic>
-        <p className="ml-4">Follow this steps to onboard as a Employer:</p>
+        <p className="mt-3 ml-3 md:ml-6">
+          Follow this steps to onboard as a Employer:
+        </p>
 
         <SubTopic id="system-configuration">1. System Configuration</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
@@ -193,29 +199,29 @@ export const gettingStartedSections: SectionType[] = [
         <SubTopic id="user-verification">
           2. User Verification & Management
         </SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
         </ul>
 
         <SubTopic id="monitor-analysis">3. Monitoring and Analysis</SubTopic>
-        <p className="ml-4">Create slot engagements with:</p>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <p className="mt-3 ml-3 md:ml-6">Create slot engagements with:</p>
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="dispute-resolution">4. Dispute Resolution</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
         </ul>
 
         <SubTopic id="platform-maintenance">5. Platform Maintenance</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Fractional roles in startups</li>
           <li>Gig economy optimization</li>
@@ -224,14 +230,14 @@ export const gettingStartedSections: SectionType[] = [
         <SubTopic id="compliance-enforcement">
           6. Compliance Enforcement
         </SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Fractional roles in startups</li>
         </ul>
 
         <SubTopic id="best-practices3">Best Practices</SubTopic>
-        <ul className="list-disc ml-10 mt-2 space-y-1">
+        <ul className="list-disc ml-6 mt-3 space-y-2">
           <li>Remote-first teams</li>
           <li>Startups needing specialized talent without full-time hires</li>
           <li>Gig economy optimization</li>

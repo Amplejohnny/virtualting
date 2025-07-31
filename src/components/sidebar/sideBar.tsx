@@ -3,10 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { sidebarItems } from "./sidebarItems";
 import Logo from "../../assets/logo-sidebar.png";
+import { useMobileMenu } from "../../context/MobileMenuContext";
+import { useLoading } from "../../context/LoadingContext";
 
 export default function Sidebar() {
   const location = useLocation();
   const pathnameWithHash = location.pathname + location.hash;
+  const { isOpen, closeMenu } = useMobileMenu();
+  const { showLoading, hideLoading } = useLoading();
 
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
 
@@ -29,18 +33,38 @@ export default function Sidebar() {
     href: string
   ) => {
     e.preventDefault();
+    showLoading();
+
+    // Navigate to the new URL
     window.location.href = href;
+
+    // Hide loading after a short delay or when the page loads
+    const hideTimeout = setTimeout(hideLoading, 1000);
+    window.addEventListener(
+      "load",
+      () => {
+        clearTimeout(hideTimeout);
+        hideLoading();
+      },
+      { once: true }
+    );
+
+    closeMenu();
   };
 
   return (
-    <aside className="sidebar-scroll hidden md:flex flex-col w-64 h-screen bg-[#0A2A73] text-white fixed top-0 left-0 overflow-y-auto z-30">
-      {/* Logo wrapper */}
-      <div className="bg-white px-2 py-4 mb-4 flex items-center justify-center shadow-sm">
+    <aside
+      className={`${
+        isOpen ? "translate-x-0" : "-translate-x-full"
+      } md:translate-x-0 transform transition-transform duration-200 ease-in-out fixed top-0 left-0 h-screen w-64 bg-[#0A2A73] text-white z-40 md:z-30 flex flex-col`}
+    >
+      {/* Logo wrapper - Only visible on desktop */}
+      <div className="hidden md:flex bg-white px-2 py-4 mb-4 items-center justify-center shadow-sm">
         <img src={Logo} alt="Virtualting Logo" className="w-[140px] h-auto" />
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 sidebar-scroll">
-        <nav className="space-y-3 px-1">
+      <div className="flex-1 overflow-y-auto sidebar-scroll">
+        <nav className="space-y-3 px-4 pt-4 md:pt-0 pb-20">
           {sidebarItems.map((item) => {
             const isOpen = openSections[item.label] ?? false;
             const isParentActive = pathnameWithHash.startsWith(item.href);
@@ -66,7 +90,7 @@ export default function Sidebar() {
                     ))}
                 </button>
 
-                {item.children && isOpen && (
+                {isOpen && item.children && (
                   <div className="ml-4 mt-1 space-y-1">
                     {item.children.map((child) => {
                       const isActive = pathnameWithHash === child.href;

@@ -36,13 +36,13 @@ export const versioningSections: SectionType[] = [
           Focus: Establishing the Core Employment Model
         </p>
         <p className="font-bold ml-4">Highlights:</p>
-        <ul className=" ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-6 mt-3 space-y-2">
           <li>Increased productivity through focused work sessions</li>
           <li>Fair compensation tied to output</li>
           <li>Clear alignment between goals and time spent</li>
         </ul>
         <p className="font-bold ml-4">Impacts:</p>
-        <ul className=" ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-6 mt-3 space-y-2">
           <li>Increased productivity through focused work sessions</li>
           <li>Fair compensation tied to output</li>
           <li>Clear alignment between goals and time spent</li>
@@ -50,19 +50,19 @@ export const versioningSections: SectionType[] = [
 
         <SubTopic id="feedback-revolution">
           Version 2.0 - "Feedback revolution"
-        </SubTopic>
+        </SubTopic> 
         <p className="font-bold ml-4">Released Date: Febrary 2025</p>
         <p className="font-bold ml-4">
           Focus: Trust Building and User Feedback Accuracy
         </p>
         <p className="font-bold ml-4">Highlights:</p>
-        <ul className=" ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-6 mt-3 space-y-2">
           <li>Increased productivity through focused work sessions</li>
           <li>Fair compensation tied to output</li>
           <li>Clear alignment between goals and time spent</li>
         </ul>
         <p className="font-bold ml-4">Impacts:</p>
-        <ul className=" ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-6 mt-3 space-y-2">
           <li>Increased productivity through focused work sessions</li>
           <li>Fair compensation tied to output</li>
           <li>Clear alignment between goals and time spent</li>
@@ -100,44 +100,44 @@ export const versioningSections: SectionType[] = [
         <SubTopic id="migration-strategy">
           Step-by-Step Migration Strategy
         </SubTopic>
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p className="ml-10 font-bold">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2 font-bold">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
         <SubTopic id="migration-support">Migration Support Tools</SubTopic>
-        <ul className="ml-14 mt-2 space-y-1">
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
           <li>is divided into measurable, bookable time slots</li>
@@ -156,21 +156,21 @@ export const versioningSections: SectionType[] = [
         </p>
 
         <SubTopic id="talent-migrating">Talents</SubTopic>
-        <ul className="ml-14 mt-2 space-y-1">
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2"> 
           <li>Review the new features and changes</li>
           <li>Update their profiles to reflect new capabilities</li>
           <li>Engage with the community for support and feedback</li>
         </ul>
 
         <SubTopic id="employer-migrating">Employers</SubTopic>
-        <ul className="ml-14 mt-2 space-y-1">
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2">   
           <li>Review the new features and changes</li>
           <li>Update their profiles to reflect new capabilities</li>
           <li>Engage with the community for support and feedback</li>
         </ul>
 
         <SubTopic id="admin-migrating">Admins</SubTopic>
-        <ul className="ml-14 mt-2 space-y-1">
+        <ul className="md:ml-14 ml-3 mt-3 space-y-2">   
           <li>Review the new features and changes</li>
           <li>Update their profiles to reflect new capabilities</li>
           <li>Engage with the community for support and feedback</li>
@@ -190,17 +190,17 @@ export const versioningSections: SectionType[] = [
         </p>
 
         <SubTopic id="role-expansion">Q2 2025: Smart Role Expansion</SubTopic>
-        <p className="ml-10">Evaluate Changelog for Future Impact</p>
-        <ul className="ml-14 mt-2 space-y-1">
+        <p className="md:ml-10 ml-2">Evaluate Changelog for Future Impact</p>
+        <ul className="md:ml-10 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
-        <p className="ml-10">Evaluate Changelog for Future Impact</p>
+        <p className="md:ml-10 ml-2">Evaluate Changelog for Future Impact</p> 
 
         <SubTopic id="institute-modules">
           Q3 2025: Micro-Institute Modules
         </SubTopic>
-        <ul className="ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
@@ -208,7 +208,7 @@ export const versioningSections: SectionType[] = [
         <SubTopic id="impact-metrics">
           Q4 2025: Gamification & Impact Metrics
         </SubTopic>
-        <ul className="ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
@@ -216,7 +216,7 @@ export const versioningSections: SectionType[] = [
         <SubTopic id="employment-engine">
           Q1 2026: Cross National Employment Engine
         </SubTopic>
-        <ul className="ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
@@ -224,12 +224,12 @@ export const versioningSections: SectionType[] = [
         <SubTopic id="employment-engine">
           Q2 2026: Autonomous Trust Governance
         </SubTopic>
-        <ul className="ml-10 mt-2 space-y-1">
+        <ul className="md:ml-10 ml-3 mt-3 space-y-2"> 
           <li>is divided into measurable, bookable time slots</li>
           <li>is focus and output are maximized per slot</li>
         </ul>
 
-        <p>
+        <p className="mt-3 ml-3 md:ml-6 text-justify">
           This roadmap outlines the key milestones and features planned for the
           next two years, focusing on enhancing the Virtualting experience for
           all users. Each phase is designed to build upon the previous one,
